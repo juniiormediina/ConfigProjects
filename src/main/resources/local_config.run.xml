@@ -1,0 +1,108 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="local_config" type="GradleRunConfiguration" factoryName="Gradle">
+    <ExternalSystemSettings>
+      <option name="env">
+        <map>
+          <!-- Global variables -->
+          <entry key="ACCES_KEY" value="#{ACCES_KEY}" />
+          <entry key="SECRET_KEY" value="#{SECRET_KEY}" />
+          <entry key="AWS_REGION" value="#{AWS_REGION}" />
+          <entry key="AAD_TENANT_ID" value="#{AAD_TENANT_ID}" />
+          <entry key="AAD_CLIENT_ID" value="#{AAD_CLIENT_ID}" />
+          <entry key="AAD_CLIENT_SECRET" value="#{AAD_CLIENT_SECRET}" />
+          <entry key="MOD_ADM_SEED_CODE" value="#{MOD_ADM_SEED_CODE}" />
+          <entry key="dynamodbMasterTable" value="moduloadministrativo-master-local" />
+          <entry key="dynamodbMessagesTable" value="moduloadministrativo-messages-local" />
+          <entry key="dynamodbParamsTable" value="moduloadministrativo-params-local" />
+          <entry key="dynamodbSeedsTable" value="moduloadministrativo-seeds-local" />
+          <entry key="dynamodbTermsconditionsTable" value="moduloadministrativo-termsconditions-local" />
+          <entry key="cors.front" value="http://localhost:4200/" />
+          
+          <!-- ms_back_admin -->
+
+          <entry key="AWS_ACCESS_KEY_ID" value="#{AWS_ACCESS_KEY_ID}" />
+          <entry key="AWS_SECRET_ACCESS_KEY" value="#{AWS_SECRET_ACCESS_KEY}" />
+          
+
+          <entry key="destinationPort" value="8082" />
+          <entry key="loginLevel" value="INFO" />
+          <entry key="TYC_DOWNLOAD_DOMAIN" value="domain.com qrAuthUsername=vble" />
+          <entry key="TOPIC_ARN_NOTIFICATION" value="arn" />
+          <entry key="kinesisDeliveryStreamFirehose" value="logs-auditoria-deliverystream-local" />
+          <entry key="s3BucketTermsConditions" value="buckettyclocal" />
+          
+          <entry key="endPointAdministraciones" value="http://localhost:8087/habitat-administraciones/administrativo" />
+          <entry key="endPointNegociosDigitalesMsResource" value="vble" />
+          <entry key="movilidadCoreAuthorizationCode" value="vble" />
+          <entry key="movilidadCoreBannersEndpoint" value="vble" />
+          <entry key="qrAuthPassword" value="vble" />
+          <entry key="qrGenerationBaseUrl" value="vble" />
+          <entry key="qrGenerationDetailsPath" value="vble" />
+          <entry key="qrGenerationListQrPath" value="vble" />
+          <entry key="qrIntermediatePlanPath" value="vble" />
+          <entry key="qrAuthUsername" value="vble" />
+          <entry key="secondsValidityTokenAdministraciones" value="15" />
+          <entry key="secretKeyTokenAdministraciones" value="keyAdministraciones" />
+          <entry key="sqsBlockOfferQueueUrl" value="http://localhost:8080" />
+          <entry key="timeOutInMinutesAdministraciones" value="15" />
+
+          <!-- ms_gateway -->
+
+          <entry key="destinationPort" value="8080" />
+          <entry key="loginLevel" value="INFO" />
+          <entry key="AZURE_MS_AUTH_PATH" value="/moduloadministrativo/auth/api/v1/authorization" />
+          <entry key="AZURE_MS_AUTH_URL" value="http://localhost:8081" />
+          <entry key="MS_BACK_ADMIN_BASEURL" value="http://localhost:8082" />
+          <entry key="MS_TYC_BASEURL" value="http://localhost:8083" />
+
+          <entry key="HABITAT_CONSTRUCTOR_AUTHORIZATION" value="http://localhost:9090" />
+          <entry key="HABITAT_CONSTRUCTOR_AUTHORIZATION_SELLER" value="http://localhost:9090" />
+          <entry key="HABITAT_CONSTRUCTOR_CORE_BASEURL" value="http://localhost:9090" />
+          <entry key="NETWORKING_CORE_BASEURL" value="http://localhost:9090" />
+          <entry key="PLINK_BACKOFFICE_API_KEY" value="key" />
+          <entry key="PLINK_CORE_BASEURL" value="http://localhost:9090" />
+          <entry key="PLINK_CURATION_API_KEY" value="http://localhost:9090" />
+          <entry key="MOVILIDAD_CORE_AUTHORIZATION" value="http://localhost:9090" />
+          <entry key="MOVILIDAD_CORE_BASEURL" value="http://localhost:9090" />
+          <entry key="LIFECOACH_CORE_BASEURL" value="http://localhost:9090" />          
+          <entry key="MS_ADMINISTRATIVO_GESTION_ACTIVOS" value="http://localhost:9090" />
+          <entry key="MS_COBROS_GESTION_ACTIVOS" value="http://localhost:9090" />
+          <entry key="MS_CONCILIACIONES_GESTION_ACTIVOS" value="http://localhost:9090" />
+          <entry key="MS_HISTORICO_GESTION_ACTIVOS" value="http://localhost:9090" />
+          <entry key="secondsValidityTokenAdministraciones" value="key" />
+          <entry key="secretKeyTokenAdministraciones" value="key" />
+
+          <!-- ms_authorization -->
+          
+          <entry key="destinationPort" value="8081" />
+          <entry key="loginLevel" value="INFO" />
+          <entry key="API_KEY_TYC_VALUE" value="key" />
+
+          <!-- ms_termscondition -->
+
+          <entry key="destinationPort" value="8083" />
+          <entry key="loginLevel" value="INFO" />
+
+        </map>
+      </option>
+      <option name="executionName" />
+      <option name="externalProjectPath" value="$PROJECT_DIR$" />
+      <option name="externalSystemIdString" value="GRADLE" />
+      <option name="scriptParameters" value="" />
+      <option name="taskDescriptions">
+        <list />
+      </option>
+      <option name="taskNames">
+        <list>
+          <option value=":app-service:bootRun" />
+          <option value="--args='--spring.profiles.active=local'" />
+        </list>
+      </option>
+      <option name="vmOptions" />
+    </ExternalSystemSettings>
+    <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+    <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+    <DebugAllEnabled>false</DebugAllEnabled>
+    <method v="2" />
+  </configuration>
+</component>
